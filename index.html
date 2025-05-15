@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Priyasha Sinha Roy-Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<style>
+		
+		html {
+  scroll-behavior: smooth;
+}
+
+
+.button.primary.icon:hover {
+  background-color: #aac2dc; /* Slightly darker blue */
+  transform: scale(1.05); /* Slight zoom */
+  transition: all 0.3s ease;
+}
+
+
+
+  .nav-buttons {
+    position:static;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 999;
+	pointer-events: none;
+  }
+
+  .nav-buttons a.button {
+	pointer-events: auto;
+    padding: 0.6em 1.2em;
+    background-color: transparent;
+	border:2px solid #ffffff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Times New Roman', serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-buttons a.button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+  }
+
+		h1, h2, h3, h4, h5, h6 {
+  			font-family: "Times New Roman", Times, serif;
+  			color: whitesmoke; /* Ensures visibility */
+		}
+
+		body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  header {
+		background-color: #333;
+		color: whitesmoke;
+		text-align: center;
+		padding: 2rem 0;
+	  }
+	  header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--bg-color);
+    }
+
+    .toggle-theme {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: 2px solid var(--text-color);
+      padding: 0.5rem 1rem;
+      color: var(--text-color);
+      cursor: pointer;
+    }
+
+    [data-aos] {
+      transition-property: transform, opacity;
+    }
+	
+
+  
+	  header img {
+		width: 220px; /* Increased from ~100px */
+		height: 220px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 4px solid #fff;
+		box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+	  }
+  
+	  .projects {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 2rem;
+	  }
+  
+	  .project-card {
+		background-color: #f9f9f9;
+		width: 420px; /* Increased width */
+		margin: 1rem;
+		border-radius: 12px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		padding: 1rem;
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 300px; /* Let it grow, shrink, and base width is 300px */
+    max-width: 420px;
+	  }
+	  .project-card:hover {
+			transform: scale(1.03);
+			box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+		}
+  
+	  .project-card img {
+		width: 100%;
+		border-radius: 8px;
+	  }
+  
+	  .project-card a {
+		display: inline-block;
+		margin-top: 0.5rem;
+		padding: 0.5rem 1rem;
+		background-color: #007BFF;
+		color: white;
+		text-decoration: none;
+		border-radius: 4px;
+	  }
+  
+	  .project-card a:hover {
+		background-color: #0056b3;
+	  }
+      
+	  .profile-pic {
+  		width: 350px;         /* Adjust as needed */
+  		height: 350px;        /* Make it square */
+  		object-fit: fit;    /* Crop without distortion */
+  		border-radius: 8px;   /* Rounded square, use 50% for circle */
+  		border: 4px solid #fff;
+  		box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+	}
+	.project-card p {
+  		margin-top: 0.5rem;
+  		font-size: 0.95rem;
+  		color: #333;
+}
+	.project-card h3 {
+  		color: black;
+  		font-family: "Times New Roman", Times, serif;
+}
+
+.skills-section {
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* space between icon + name blocks */
+  margin-top: 20px;
+}
+
+.skills-icons .icon-container {
+  display: flex;
+  align-items:baseline;
+  gap: 10px; /* space between icon and skill name */
+  padding: 0;
+  margin: 0;
+}
+
+.skills-icons img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  padding: 0; /* remove internal spacing */
+  margin: 0;
+}
+
+
+.skills-icons img:hover {
+  transform: scale(1.1); /* Optional: zoom effect on hover */
+}
+
+
+
+.skill-icon span {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+
+
+	</style>
+</head>
+ 
+<body class="is-preload">
+	<body class="light-mode">
+		<button class="toggle-theme" onclick="toggleTheme()">HOME</button>
+	<div id="wrapper">
+		<header id="header">
+			<a id="home"></a>
+			<div class="logo">
+				<span class="icon fa-chart-bar"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					
+					  
+					<img src="images/me.jpeg" alt="Priyasha Sinha Roy" class="profile-pic" />
+					<h1>Hi, I'm Priyasha</h1>
+					<p><span id="typed-text"></span></p>
+					<div style="text-align: center; margin-top: 20px;">
+						<a href="images/Priyasha DA CV.pdf" class="button primary icon solid fa-download">Download Resume</a>
+					  </div>
+					  <div class="nav-buttons">
+						<div></div>
+						
+						
+					</div>
+					  
+				</div>
+			</div>
+			<nav>
+				<ul style="display: flex; list-style: none; justify-content: space-around; padding: 1rem;">
+					<li><a href="#intro">About</a></li>
+					<li><a href="#work">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="nav-buttons">
+				<div></div>
+				
+				<a href="#intro" class="button">Next →</a>
+			</div>
+		</header>
+
+		<div id="main">
+
+			<article id="intro" data-aos="fade-up">
+				<h2 class="major">About Me</h2>
+				<p>I'm a data analyst with a Master’s in Information Systems from Syracuse University and real-world experience spanning tech, healthcare, and education.</p>
+				<p>What sets me apart? I think like a detective—driven by curiosity, obsessed with patterns, and relentless about getting to the “why” behind the numbers. With skills in Python, SQL, Power BI, Statistical Analysis and a disciplined mindset sharpened by daily runs, I turn messy data into clear decisions.</p>
+				<p>If you're looking to collaborate or need data that tells a real story, feel free to reach out.</p>
+				<div class="nav-buttons">
+					<!-- No previous on Home -->
+					<div></div>
+					
+					<a href="#work" class="button">Next →</a>
+				  </div>
+					  
+			</article>
+			
+			  
+			<article id="work" data-aos="fade-up">
+				<h2 class="major">Skills</h2>
+				<table>
+					<thead>
+						<tr><th>Category</th><th>Skills</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>Data Analysis</td><td>Statistical analysis, Exploratory data analysis, Predictive ML modeling</td></tr>
+						<tr><td>Visual Analytics</td><td>Dashboard design, User interaction, Power BI/Tableau, Source integration</td></tr>
+						<tr><td>Business Analysis</td><td>SDLC, Jira, Git, Stakeholder management, Microsoft Office</td></tr>
+					</tbody>
+				</table>
+        <h2 class="major">Tools</h2>
+        <div class="skills-icons">
+
+          <div class="icon-container">
+            <img src="images/SQL.png" alt="SQL">
+            <span>SQL</span>
+          </div>
+
+          <div class="icon-container">
+            <img src="images/t-sql.png" alt="T-SQL">
+            <span>T-SQL</span>
+          </div>
+
+          <div class="icon-container">
+            <img src="images/Python.png" alt="Python">
+            <span>Python</span>
+          </div>
+
+          <div class="icon-container">
+            <img src="images/MySQL.png" alt="Python">
+            <span>My SQL</span>
+          </div>
+
+          <div class="icon-container">
+          <img src="images/postgresql.png" alt="PostgreSQL">
+          <span>PostgreSQL</span>
+          </div>
+
+          <div class="icon-container">
+          <img src="images/Snowflake.png" alt="Snowflake">
+          <span>Snowflake</span>
+          </div>
+
+          <div class="icon-container">
+          <img src="images/Power BI.png" alt="Power BI">
+          <span>Power BI</span>
+          </div>
+          
+          <div class="icon-container">
+          <img src="images/MS Excel.png" alt="MS Excel">
+          <span>MS Excel</span>
+        </div>
+        
+        
+				<div class="nav-buttons">
+					<a href="#intro" class="button">← Previous</a>
+					<a href="#projects" class="button">Next →</a>
+				  </div>
+				  
+				  
+			</article>
+
+			<article id="projects"data-aos="fade-up">
+				<h2 class="major">Projects</h2>
+			  
+				<!-- Subsection Tabs -->
+				<div style="text-align:center; margin-bottom: 2rem;">
+					<a href="#sql-projects" class="button">SQL</a>
+					<a href="#python-projects" class="button">Python / R</a>
+					<a href="#powerbi-projects" class="button">Power BI</a>
+				  </div>
+			  
+				<!-- SQL Projects -->
+				<section id="sql-projects">
+				  <h3>SQL Projects</h3>
+				  <div class="project-grid">
+					<div class="project-card">
+					  <img src="images/Pizza Sales Performance Report.png" alt="Pizza Sales">
+					  <h3>Pizza Sales Performance Analysis Using SQL</h3>
+					  <p>Leveraged advanced SQL queries to analyze sales data, identify top-performing pizzas, peak sales hours, and customer trends.</p>
+					  <a href="https://github.com/psinharo/pizza_sales-SQL" target="_blank">GitHub Repo</a>
+					</div>
+					<div class="project-card">
+						<img src="images/Inventor Management pic.png" alt="Inventory">
+						<h3>Inventory Management System Using SQL </h3>
+						<p>Developed an SQL-based system to track inventory in real-time for a university campus store.</p>
+						<p>Automated manual processes and reduced stockouts, improving operational efficiency and cost control.</p>
+						<a href="https://github.com/psinharo/Inventory-Management-System-Using-SQL" target="_blank">GitHub Repo</a>
+					  </div>
+				  </div>
+				</section>
+			  
+				<!-- Python Projects -->
+				<section id="python-projects">
+				  <h3>Python/R Projects(Pandas,numpy,matplotlib,seaborn)</h3>
+				  <div class="project-grid">
+					<div class="project-card">
+					  <img src="images/Banking Risk EDA Image.png" alt="Risk Analytics">
+					  <h3>Risk Analytics in Banking  and Financial Services Using Python</h3>
+					  <p>Performed EDA using Python to uncover risk patterns and built a dynamic 0 to 100 risk scoring model.</p>
+					  <p>Used K-Means clustering and Automated Power BI dashboard to support smarter lending and reduce financial exposure.</p>
+					  <a href="https://github.com/psinharo/Risk-Analytics-in-Banking-and-Financial-Services-A-Python-EDA-and-Power-BI-Project" target="_blank">GitHub Repo</a>
+					</div>
+					<div class="project-card">
+					  <img src="images/Quantium Retail Analytics Presentation.png" alt="Retail Analytics">
+					  <h3>Retail Analytics for Quantium Using Advanced Python</h3>
+					  <p>Analyzed customer transaction data with Python to assess campaign impact and shopper behavior.</p>
+					  <p>Delivered actionable insights for marketing strategy using A/B testing, Segmentation, and Statistical Tests.</p>
+					  <a href="https://github.com/psinharo/Quantium-Advanced-Retail-Analytics-with-Python" target="_blank">GitHub Repo</a>
+					</div>
+					<div class="project-card">
+					  <img src="images/Healthcare Costs Prediction Infographic.png" alt="Health Analytics">
+					  <h3>Healthcare Cost Predictive Analytics Using R</h3>
+					  <p>Built a predictive pricing model using R to forecast high-cost HMO members.</p>
+					  <p>Enabled cost-saving interventions by applying SVM and decision tree models on HIPAA-compliant data.</p>
+					  <a href="https://github.com/psinharo/Health-Management-Cost-Predictive-Analytics-Using-R" target="_blank">GitHub Repo</a>
+					</div>
+				  </div>
+				</section>
+			  
+				<!-- Power BI Projects -->
+				<section id="powerbi-projects">
+				  <h3>Power BI Projects</h3>
+				  <div class="project-grid">
+					<div class="project-card">
+					  <img src="images/generated-image.png" alt="Amazon Dashboard">
+					  <h3>Amazon Prime Dashboard (Power BI) </h3>
+					  <p>Created an interactive Power BI dashboard visualizing Amazon Prime user behavior.</p>
+						<p>Highlighted key trends in streaming preferences, churn, and engagement to support data-driven decisions.</p>
+					  <a href="https://github.com/psinharo/Amazon-prime-Dasboard" target="_blank">GitHub Repo</a>
+					</div>
+				  </div>
+				</section>
+				<div class="nav-buttons">
+					<a href="#work" class="button">← Previous</a>
+					<a href="#contact" class="button">Next →</a>
+				  </div>
+				  
+			  </article>
+			  
+			  
+
+			<article id="contact"data-aos="fade-up" >
+				<h2 class="major">Contact</h2>
+				<form method="POST" action="https://formsubmit.co/priyashasinharoy1997@gmail.com">
+					<input type="text" name="name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<textarea name="message" placeholder="Your Message" required></textarea>
+				  
+					<!-- Optional: Redirect to thank you page after submission -->
+					<input type="hidden" name="_next" value="thankyou.html">
+				  
+					<!-- Optional: Disable CAPTCHA -->
+					<input type="hidden" name="_captcha" value="false">
+				  
+					<button type="submit">Send Message</button>
+				  </form>
+			 <!-- Contact Info with Icons -->
+  			<div style="margin-top: 2rem; font-family: 'Times New Roman', serif; color: whitesmoke;">
+				<p><i class="fas fa-envelope"></i>
+				<strong> Email:</strong> 
+				<a href="mailto:priyashasinharoy1997@gmail.com">priyashasinharoy1997@gmail.com</a>
+				</p>
+				<p>
+				<i class="fas fa-phone"></i>
+				<strong> Phone:</strong> 315-766-4302
+				</p>
+			</div>
+				  
+				<ul class="icons">
+					<li><a href="https://github.com/psinharo" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/priyasha-sinha-roy/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<div class="nav-buttons">
+					<a href="#projects" class="button">← Previous</a>
+					
+				  </div>
+				  
+			</article>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		var typed = new Typed("#typed-text", {
+			strings: ["Data Analyst", "Business Analyst", "Data Storyteller", "Business Intelligence", "Data Interpreter"],
+			typeSpeed: 60,
+			backSpeed: 40,
+			backDelay: 1500,
+			loop: true
+		});
+	</script>
+	
+</body>
+</html>
